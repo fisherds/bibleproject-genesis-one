@@ -114,24 +114,26 @@
         }
         
         #drawer {
-            width: 40%;
-            max-width: 500px;
+            flex-shrink: 0; /* Prevents the drawer from shrinking */
+            max-width: 0; /* Collapsed by default */
+            padding-left: 0;
+            padding-right: 0;
             background-color: white;
             box-shadow: -4px 0 15px rgba(0,0,0,0.1);
-            padding: 2rem;
             flex-direction: column;
             height: 100vh;
-            position: fixed;
+            position: sticky;
             top: 0;
-            right: 0;
             overflow-y: auto;
-            transform: translateX(100%);
-            transition: transform 0.4s ease-in-out;
-            display: flex; /* Always flex now, position controls visibility */
+            overflow-x: hidden;
+            transition: max-width 0.4s ease-in-out, padding 0.4s ease-in-out;
+            display: flex;
         }
 
-        #page-container.drawer-open #main-content {
-            margin-right: 36%; /* Pushes the content over. Adjust this value to match drawer width */
+
+        #page-container.drawer-open #drawer {
+            max-width: 500px; /* Expands to its full size */
+            padding: 2rem;
         }
 
         #page-container.drawer-open #drawer {
@@ -151,6 +153,12 @@
             padding-left: 1.5rem;
             margin-top: 0.5rem;
             margin-bottom: 0;
+        }
+        /* --- Mobile Specific Styles --- */
+        @media (max-width: 768px) {
+            #drawer {
+                display: none;
+            }
         }
     </style>
 </head>
