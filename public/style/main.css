@@ -1,0 +1,169 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    overflow-x: hidden;
+    /* Prevent horizontal scrollbar during animation */
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    /* 16px */
+    padding: 1rem;
+    /* 16px */
+}
+
+.grid-container {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 769px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: column;
+        align-items: start;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.75rem;
+    /* 12px */
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    color: #111827;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    border-bottom: 2px solid #d1d5db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* --- Highlighting Styles --- */
+/* .repeated-said {
+    background-color: rgba(253, 230, 138, 0.5);
+}
+.repeated-over-the-face {
+    background-color: rgba(148, 96, 160, 0.5);
+}
+.repeated-let {
+    background-color: rgba(251, 191, 143, 0.5);
+}
+.repeated-good {
+    background-color: rgba(167, 243, 208, 0.6);
+} */
+
+
+.highlight {
+    background-color: #facc15;
+    /* A strong, solid yellow */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+[class*="h"] {
+    display: inline-block;
+    padding: 0 2px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* --- Interlinear Grid Layout --- */
+.interlinear-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 equal columns for English and Hebrew */
+    gap: 0.5rem 1.5rem;
+    /* Vertical and horizontal gap */
+    align-items: start;
+}
+
+.hebrew-line {
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    direction: rtl;
+    text-align: right;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.english-line {
+    line-height: 1.75rem;
+}
+
+/* --- Drawer Styles --- */
+#page-container {
+    display: flex;
+    width: 100%;
+}
+
+#main-content {
+    flex-grow: 1;
+    transition: margin-right 0.4s ease-in-out;
+    min-width: 0;
+    margin-right: 0;
+}
+
+#drawer {
+    flex-shrink: 0;
+    /* Prevents the drawer from shrinking */
+    max-width: 0;
+    /* Collapsed by default */
+    padding-left: 0;
+    padding-right: 0;
+    background-color: white;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: max-width 0.4s ease-in-out, padding 0.4s ease-in-out;
+    display: flex;
+}
+
+
+#page-container.drawer-open #drawer {
+    max-width: 500px;
+    /* Expands to its full size */
+    padding: 2rem;
+}
+
+#page-container.drawer-open #drawer {
+    transform: translateX(0);
+}
+
+.occurrences-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 0.25rem 1rem;
+    justify-content: start;
+    max-height: none;
+}
+
+.bdb_def+ol {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* --- Mobile Specific Styles --- */
+@media (max-width: 360px) {
+    #drawer {
+        display: none;
+    }
+}
