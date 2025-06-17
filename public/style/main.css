@@ -12,6 +12,14 @@ body {
     line-height: 1;
 }
 
+.phrase {
+    font-size: 0.5em;
+    color: #6b7280; /* Tailwind gray-500 */
+    vertical-align: super;
+    line-height: 1;
+    color: lightskyblue;
+}
+
 .grid-container {
     display: grid;
     gap: 1rem;
@@ -59,10 +67,10 @@ body {
 }
 
 /* --- Highlighting Styles --- */
-/* .repeated-said {
+.repeated-said {
     background-color: rgba(253, 230, 138, 0.5);
 }
-.repeated-over-the-face {
+/* .repeated-over-the-face {
     background-color: rgba(148, 96, 160, 0.5);
 }
 .repeated-let {
@@ -87,19 +95,14 @@ body {
 
 [class*="h"] {
     display: inline-block;
-    padding: 0 2px;
     border-radius: 3px;
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
 
-/* --- Interlinear Grid Layout --- */
 .interlinear-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* 2 equal columns for English and Hebrew */
-    gap: 0.5rem 1.5rem;
-    /* Vertical and horizontal gap */
     align-items: start;
 }
 
@@ -107,15 +110,8 @@ body {
     font-family: 'Noto Sans Hebrew', sans-serif;
     direction: rtl;
     text-align: right;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
 }
 
-.english-line {
-    line-height: 1.75rem;
-}
-
-/* --- Drawer Styles --- */
 #page-container {
     display: flex;
     width: 100%;
@@ -130,9 +126,7 @@ body {
 
 #drawer {
     flex-shrink: 0;
-    /* Prevents the drawer from shrinking */
     max-width: 0;
-    /* Collapsed by default */
     padding-left: 0;
     padding-right: 0;
     background-color: white;
@@ -150,7 +144,6 @@ body {
 
 #page-container.drawer-open #drawer {
     max-width: 500px;
-    /* Expands to its full size */
     padding: 2rem;
 }
 
