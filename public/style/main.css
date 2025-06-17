@@ -5,6 +5,13 @@ body {
     /* Prevent horizontal scrollbar during animation */
 }
 
+.verse {
+    font-size: 0.5em;
+    color: #6b7280; /* Tailwind gray-500 */
+    vertical-align: super;
+    line-height: 1;
+}
+
 .grid-container {
     display: grid;
     gap: 1rem;
@@ -30,7 +37,7 @@ body {
     background-color: white;
     border-radius: 0.75rem;
     /* 12px */
-    padding: 1.5rem;
+    padding: 1.25rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     color: #111827;
     border: 1px solid #e5e7eb;
@@ -68,8 +75,12 @@ body {
 
 .highlight {
     background-color: #facc15;
-    /* A strong, solid yellow */
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.drawer-highlight{
+    background-color: #f4e196;
     transition: background-color 0.2s ease-in-out;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }

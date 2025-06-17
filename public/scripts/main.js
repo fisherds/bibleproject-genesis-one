@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let occurrenceIndex = 1;
             document.querySelectorAll('.english-line').forEach(line => {
                 if (line.querySelector(`.${strongsClass}`)) {
-                    console.log("Found occurrence of", strongsClass, "in line:", line.innerText);
                     const card = line.closest('.card');
                     const dayId = card ? card.id : 'N/A';
                     const dayNumber = dayId.replace('day', '');
@@ -57,7 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // Find all spans with the Strong's number class within the temporary element and add the 'highlight' class
                     tempLine.querySelectorAll('.' + strongsClass).forEach(el => {
-                        el.classList.add('highlight');
+                        el.classList.add('drawer-highlight');
+                        console.log(`Highlighting element with class ${strongsClass}:`, el);
                     });
 
                     // Use the modified HTML from the temporary element
