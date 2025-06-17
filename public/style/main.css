@@ -68,17 +68,14 @@ body {
 
 /* --- Highlighting Styles --- */
 .repeated-said {
-    background-color: rgba(253, 230, 138, 0.5);
-}
-/* .repeated-over-the-face {
-    background-color: rgba(148, 96, 160, 0.5);
+    background-color: rgba(253, 230, 138, 0.25);
 }
 .repeated-let {
-    background-color: rgba(251, 191, 143, 0.5);
+    background-color: rgba(251, 191, 143, 0.25);
 }
 .repeated-good {
-    background-color: rgba(167, 243, 208, 0.6);
-} */
+    background-color: rgba(167, 243, 208, 0.25);
+}
 
 
 .highlight {
@@ -102,7 +99,7 @@ body {
 
 .interlinear-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: start;
 }
 
