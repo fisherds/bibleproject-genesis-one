@@ -160,8 +160,8 @@ body {
 
 .occurrences-grid {
     display: grid;
-    grid-template-columns: auto auto 1fr;
-    gap: 0.25rem 1rem;
+    grid-template-columns: auto auto auto 1fr;
+    gap: 2px;
     justify-content: start;
     max-height: none;
 }

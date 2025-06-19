@@ -39,9 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (concordanceWordData && hebrewDictionaryWordData) {
             let occurrencesHTML = `
-                        <div class="font-bold text-gray-500 text-right pr-2">#</div>
-                        <div class="font-bold text-gray-500">Day</div>
-                        <div class="font-bold text-gray-500">Line</div>
+                        <div class="font-bold text-sm text-center text-gray-500">#</div>
+                        <div class="font-bold text-sm text-center text-gray-500">Ref</div>
+                        <div class="font-bold text-sm text-center text-gray-500">Day</div>
+                        <div class="font-bold text-sm text-gray-500">Line</div>
                     `;
             let occurrenceIndex = 1;
             document.querySelectorAll('.english-line').forEach(line => {
@@ -49,23 +50,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     const card = line.closest('.card');
                     const dayId = card ? card.id : 'N/A';
                     const dayNumber = dayId.replace('day', '');
+                    let chapter = "";
+                    let verse = "";
 
-                    // Create a temporary element to safely manipulate the HTML
                     const tempLine = document.createElement('div');
                     tempLine.innerHTML = line.innerHTML;
-
-                    // Find all spans with the Strong's number class within the temporary element and add the 'highlight' class
                     tempLine.querySelectorAll('.' + strongsClass).forEach(el => {
                         el.classList.add('drawer-highlight');
-                        console.log(`Highlighting element with class ${strongsClass}:`, el);
+                        console.log(el.dataset.id);
+                        const wordData = genesisOneWords[el.dataset.id];
+                        if (wordData) {
+                            chapter = wordData.chapter || chapter;
+                            verse = wordData.verse || verse;
+                        }
                     });
-
-                    // Use the modified HTML from the temporary element
                     const highlightedLineHTML = tempLine.innerHTML;
                     
                     occurrencesHTML += `
-                                <div class="text-right pr-2 text-gray-500">${occurrenceIndex++}</div>
-                                <div>${dayNumber}</div>
+                                <div class="text-sm text-center text-sky-600">${occurrenceIndex++}</div>
+                                <div class="text-sm text-center text-gray-500">${chapter}:${verse}</div>
+                                <div class="text-sm text-center text-gray-500">${dayNumber}</div>
                                 <div>${highlightedLineHTML}</div>
                             `;
                 }
