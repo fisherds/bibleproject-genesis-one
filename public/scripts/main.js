@@ -74,13 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
             contentHTML += `
                         <h3 class="text-3xl hebrew-line mb-2 text-center">${concordanceWordData.hebrew_word || ''}</h3> 
                         <h3 class="text-lg font-semibold text-sky-700 mb-1 text-center">${concordanceWordData.gloss_transliteration || ''}</h3>   
-                        <p class="text-xs text-gray-500 mb-4 text-center">(Strongs: ${concordanceWordData.strongs_number}) </p>                     
                         <h4 class="font-bold border-b pb-1 mb-2 mt-2">Occurrences in this text:</h4>
                         <div class="occurrences-grid mt-2">${occurrencesHTML}</div>
                         <hr class="my-4">
-                        <h3 class="text-3xl hebrew-line mb-2 text-left">${concordanceWordData.lexeme}</h3>
+                        <h3 class="text-3xl hebrew-line mb-2 text-center">${concordanceWordData.lexeme}</h3>
+                        <h3 class="text-lg font-semibold text-sky-700 mb-1 text-center">${concordanceWordData.transliteration || ''}</h3>   
+                        <p class="text-xs text-gray-500 mb-4 text-center">(Strongs: ${concordanceWordData.strongs_number}) </p>                     
                         <p class="text-sky-700 mb-1">${hebrewDictionaryWordData.word || 'N/A'}</p>
-                        <p class="text-xs text-gray-500 mb-4">(Strongs: ${hebrewDictionaryWordData.strongs})</p>
                         <div class="italic ml-4 mb-4">${concordanceWordData.definition || 'No definition available.'}</div>
                     `;
         } else {
