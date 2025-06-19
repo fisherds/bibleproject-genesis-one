@@ -12,7 +12,11 @@ body {
     line-height: 1;
 }
 
-.phrase {
+#drawer .phrase {
+    display: none;
+}
+
+#main-content .phrase {
     font-size: 0.5em;
     color: #6b7280; /* Tailwind gray-500 */
     vertical-align: super;
@@ -73,6 +77,9 @@ body {
     background-color: rgba(167, 243, 208, 0.25);
 }
 
+#main-content .repeated-according-to {
+    background-color: rgba(102, 216, 115, 0.15);
+}
 
 .highlight {
     background-color: #facc15;
