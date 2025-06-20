@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageContainer = document.getElementById('page-container');
     const drawer = document.getElementById('drawer');
     const mainContent = document.getElementById('main-content');
+    const transliterationTooltip = document.getElementById('transliteration-tooltip');
 
     let hebrewDictionary = {};
     let genesisOneWords = {};
@@ -121,8 +122,24 @@ document.addEventListener('DOMContentLoaded', () => {
             updateDrawer(wordId, strongsClass);
         } else if (event.type === 'mouseover') {
             document.querySelectorAll('.' + strongsClass).forEach(el => el.classList.add('highlight'));
+
+            // TODO: I need a way to turn this feature off, it could be annoying for some users!
+            const hebrewWordEl = document.querySelector(`.hebrew-line [data-id="${wordId}"]`);
+            if (hebrewWordEl) {
+                transliterationTooltip.textContent = genesisOneWords[wordId]?.pronunciation || '';
+                console.log(transliterationTooltip.textContent);
+                transliterationTooltip.classList.add('show');
+                
+                const rect = hebrewWordEl.getBoundingClientRect();
+                const tooltipHeight = transliterationTooltip.offsetHeight;
+                const scrollY = window.scrollY || window.pageYOffset;
+
+                transliterationTooltip.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (transliterationTooltip.offsetWidth / 2)}px`;
+                transliterationTooltip.style.top = `${rect.top + scrollY - tooltipHeight - 5}px`; // 5px padding
+            }
         } else if (event.type === 'mouseout') {
             document.querySelectorAll('.' + strongsClass).forEach(el => el.classList.remove('highlight'));
+            transliterationTooltip.classList.remove('show');
         }
     };
 
