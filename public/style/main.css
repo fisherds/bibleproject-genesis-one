@@ -58,9 +58,9 @@ body {
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    color: #111827;
+    color: #4f545e;
     border-bottom: 2px solid #d1d5db;
     padding-bottom: 0.5rem;
     margin-bottom: 0.75rem;
@@ -73,7 +73,7 @@ body {
     background-color: rgba(251, 191, 143, 0.25);
 }
 .repeated-good {
-    background-color: rgba(167, 243, 208, 0.25);
+    background-color: rgba(167, 243, 208, 0.45);
 }
 
 #main-content .repeated-according-to {

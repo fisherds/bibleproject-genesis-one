@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const allCards = document.querySelectorAll('.card');
 
         if (filterClass) {
+            console.log(filterClass);
             document.querySelector("footer").style.display = 'none';
             allCards.forEach(card => {
                 if (!card.classList.contains(`show-${filterClass}`)) {
