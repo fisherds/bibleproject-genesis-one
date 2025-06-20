@@ -5,9 +5,121 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     const transliterationTooltip = document.getElementById('transliteration-tooltip');
 
+    const leftSideDrawer = document.getElementById('left-side-drawer');
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const closeDrawerBtn = document.getElementById('close-drawer-btn');
+    const leftDrawerOverlay = document.getElementById('left-drawer-overlay');
+
+    let activeFilter = null;
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const resetButton = document.getElementById('reset-btn');
+
     let hebrewDictionary = {};
     let genesisOneWords = {};
     let isDrawerOpen = false;
+
+    // Left drawer logic
+    function toggleLeftDrawer() {
+        if (leftSideDrawer.classList.contains('open')) {
+            closeLeftDrawer();
+        } else {
+            openLeftDrawer();
+        }
+    }
+
+    function openLeftDrawer() {
+        leftSideDrawer.classList.add('open');
+        leftDrawerOverlay.classList.add('open');
+    }
+
+    function closeLeftDrawer() {
+        leftSideDrawer.classList.remove('open');
+        leftDrawerOverlay.classList.remove('open');
+    }
+
+    hamburgerMenu.addEventListener('click', toggleLeftDrawer);
+    closeDrawerBtn.addEventListener('click', closeLeftDrawer);
+    leftDrawerOverlay.addEventListener('click', closeLeftDrawer); // Close drawer when clicking outside
+
+    function applyFilter(filterClass) {
+        const allEnglishLines = document.querySelectorAll('.english-line');
+        const allHebrewLines = document.querySelectorAll('.hebrew-line');
+        const allCards = document.querySelectorAll('.card');
+
+        if (filterClass) {
+            document.querySelector("footer").style.display = 'none';
+            allCards.forEach(card => {
+                if (!card.classList.contains(`show-${filterClass}`)) {
+                    if (card.id === 'day0' || card.id === 'title' || card.id === 'day7') {
+                      card.style.display = 'none';
+                    } else {
+                        card.style.visibility = 'hidden';
+                    }
+                } else {
+                    card.style.visibility = '';
+                    card.style.display = '';
+                }
+            });
+            allEnglishLines.forEach(line => {
+                if (!line.classList.contains(`show-${filterClass}`)) {
+                    line.style.display = 'none';
+
+                } else {
+                    line.style.display = '';
+                }
+            });
+            allHebrewLines.forEach(line => {
+                if (!line.classList.contains(`show-${filterClass}`)) {
+                    line.style.display = 'none';
+                } else {
+                    line.style.display = '';
+                }
+            });
+        } else {
+            document.querySelector("footer").style.display = '';
+            allCards.forEach(card => card.style.display = '');
+            allCards.forEach(card => card.style.visibility = '');
+            allEnglishLines.forEach(line => line.style.display = '');
+            allHebrewLines.forEach(line => line.style.display = '');
+        }
+
+        activeFilter = filterClass;
+        updateFilterButtons();
+        closeLeftDrawer(); // Close drawer after filter selection
+    }
+
+    function updateFilterButtons() {
+        filterButtons.forEach(btn => {
+            if (btn.dataset.filterClass === activeFilter) {
+                btn.classList.add('bg-amber-300', 'border-amber-400');
+                btn.classList.remove('bg-white');
+            } else {
+                btn.classList.remove('bg-amber-300', 'border-amber-400');
+                btn.classList.add('bg-white');
+            }
+        });
+
+        if (activeFilter) {
+            document.querySelector("#reset-filter-area").style.display = '';
+        } else {
+            document.querySelector("#reset-filter-area").style.display = 'none';
+        }
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filterClass = button.dataset.filterClass;
+            if (activeFilter === filterClass) {
+                applyFilter(null);
+            } else {
+                applyFilter(filterClass);
+            }
+        });
+    });
+
+    resetButton.addEventListener('click', () => {
+        applyFilter(null);
+    });
 
     // Fetch both data files
     Promise.all([
@@ -66,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     });
                     const highlightedLineHTML = tempLine.innerHTML;
-                    
+
                     occurrencesHTML += `
                                 <div class="text-sm text-center text-sky-600">${occurrenceIndex++}</div>
                                 <div class="text-sm text-center text-gray-500">${chapter}:${verse}</div>
@@ -129,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 transliterationTooltip.textContent = genesisOneWords[wordId]?.pronunciation || '';
                 console.log(transliterationTooltip.textContent);
                 transliterationTooltip.classList.add('show');
-                
+
                 const rect = hebrewWordEl.getBoundingClientRect();
                 const tooltipHeight = transliterationTooltip.offsetHeight;
                 const scrollY = window.scrollY || window.pageYOffset;
