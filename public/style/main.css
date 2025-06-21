@@ -66,13 +66,11 @@ body {
     margin-bottom: 0.75rem;
 }
 
-.repeated-said {
+#main-content .repeated-said {
     background-color: rgba(253, 230, 138, 0.25);
 }
-.repeated-let {
-    background-color: rgba(251, 191, 143, 0.25);
-}
-.repeated-good {
+
+#main-content .repeated-good {
     background-color: rgba(167, 243, 208, 0.45);
 }
 
@@ -253,6 +251,14 @@ body {
 #page-container.drawer-open #drawer {
     max-width: 500px;
     padding: 2rem;
+    z-index: 40;
+}
+
+@media (max-width: 500px) {
+  #page-container.drawer-open #drawer {
+    max-width: 95vw;
+    padding: 1rem;
+  }
 }
 
 #page-container.drawer-open #drawer {
