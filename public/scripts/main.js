@@ -90,15 +90,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateFilterButtons() {
-        filterButtons.forEach(btn => {
-            if (btn.dataset.filterClass === activeFilter) {
-                btn.classList.add('bg-amber-300', 'border-amber-400');
-                btn.classList.remove('bg-white');
-            } else {
-                btn.classList.remove('bg-amber-300', 'border-amber-400');
-                btn.classList.add('bg-white');
-            }
-        });
+        // filterButtons.forEach(btn => {
+        //     if (btn.dataset.filterClass === activeFilter) {
+        //         btn.classList.add('bg-amber-300', 'border-amber-400');
+        //         btn.classList.remove('bg-white');
+        //     } else {
+        //         btn.classList.remove('bg-amber-300', 'border-amber-400');
+        //         btn.classList.add('bg-white');
+        //     }
+        // });
 
         if (activeFilter) {
             document.querySelector("#reset-filter-area").style.display = '';
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const strongsClass = classList.find(c => c.startsWith('h'));
         const wordId = target.dataset.id;
 
-        if (!strongsClass || strongsClass === 'h0') return;
+        // if (!strongsClass || strongsClass === 'h0') return;
 
         if (event.type === 'click') {
             updateDrawer(wordId, strongsClass);
