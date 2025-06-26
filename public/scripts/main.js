@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const allCards = document.querySelectorAll('.card');
 
         if (filterClass) {
-            console.log(filterClass);
             document.querySelector("footer").style.display = 'none';
             allCards.forEach(card => {
                 if (!card.classList.contains(`show-${filterClass}`)) {
@@ -146,7 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!hebrewDictionary || !genesisOneWords) return;
 
         const strongsNumber = strongsClass.startsWith('h') ? strongsClass : `h${strongsClass}`;
-        console.log("Finding data for:", strongsNumber, "with wordId:", wordId);
         const hebrewDictionaryWordData = hebrewDictionary[strongsNumber];
         const concordanceWordData = genesisOneWords[wordId];
         let contentHTML = '<button id="close-drawer" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 text-3xl font-bold">&times;</button>';
@@ -171,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     tempLine.innerHTML = line.innerHTML;
                     tempLine.querySelectorAll('.' + strongsClass).forEach(el => {
                         el.classList.add('drawer-highlight');
-                        console.log(el.dataset.id);
                         const wordData = genesisOneWords[el.dataset.id];
                         if (wordData) {
                             chapter = wordData.chapter || chapter;
@@ -240,7 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const hebrewWordEl = document.querySelector(`.hebrew-line [data-id="${wordId}"]`);
             if (hebrewWordEl) {
                 transliterationTooltip.textContent = genesisOneWords[wordId]?.pronunciation || '';
-                console.log(transliterationTooltip.textContent);
                 transliterationTooltip.classList.add('show');
 
                 const rect = hebrewWordEl.getBoundingClientRect();
