@@ -83,6 +83,11 @@ body {
     background-color: rgba(152, 98, 142, 0.15);
 }
 
+#main-content .repeated-light-lights,
+.left-side-drawer .repeated-light-lights {
+    background-color: rgba(255, 255, 0, 0.45);
+}
+
 .highlight {
     background-color: #facc15;
     cursor: pointer;
