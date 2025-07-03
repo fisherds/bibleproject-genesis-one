@@ -85,7 +85,22 @@ body {
 
 #main-content .repeated-light-lights,
 .left-side-drawer .repeated-light-lights {
-    background-color: rgba(255, 255, 0, 0.45);
+    background-color: rgba(255, 255, 0, 0.15);
+}
+
+#main-content .repeated-bara,
+.left-side-drawer .repeated-bara {
+    background-color: rgba(121, 137, 228, 0.35);
+}
+
+#main-content .repeated-asah,
+.left-side-drawer .repeated-asah {
+    background-color: rgba(255, 97, 135 , 0.25);
+}
+
+#main-content .repeated-separate-called,
+.left-side-drawer .repeated-separated-called {
+    background-color: rgba(56, 46, 56, 0.315);
 }
 
 .highlight {

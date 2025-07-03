@@ -32,6 +32,18 @@
             <button data-filter-class="god-said" class="repeated-said filter-btn hover:bg-amber-100 text-stone-700 py-2 px-4 border border-stone-300 rounded-lg shadow-sm transition-all duration-200 text-left w-full">And Elohim <b>said</b> ...</button>
             <button data-filter-class="good" class="repeated-good filter-btn hover:bg-amber-100 text-stone-700 py-2 px-4 border border-stone-300 rounded-lg shadow-sm transition-all duration-200 text-left w-full">And Elohim <b>saw</b> that it was good</button>
             <button data-filter-class="according-to" class="repeated-according-to filter-btn hover:bg-amber-100 text-stone-700 py-2 px-4 border border-stone-300 rounded-lg shadow-sm transition-all duration-200 text-left w-full">According to its kind</button>
+            <button data-filter-class="bara" class="repeated-bara filter-btn hover:bg-amber-100 text-stone-700 py-2 px-4 border border-stone-300 rounded-lg shadow-sm transition-all duration-200 text-left w-full">
+                Bara*  → בר*א
+                <br>&nbsp;Beginning → בראשית
+                <br>&nbsp;Created → ברא
+                <br>&nbsp;Blessed → ברך
+            </button>
+            <button data-filter-class="asah" class="repeated-asah filter-btn hover:bg-amber-100 text-stone-700 py-2 px-4 border border-stone-300 rounded-lg shadow-sm transition-all duration-200 text-left w-full">
+                Made / Did the work → עשה
+            </button>
+            <button data-filter-class="separated-called" class="repeated-separated-called filter-btn hover:bg-amber-100 text-stone-700 py-2 px-4 border border-stone-300 rounded-lg shadow-sm transition-all duration-200 text-left w-full">
+                Separated and Called
+            </button>
         </div>
         <br><br><br><br>
         <p class="text-sm text-gray-600">Note: this feature is still a work in progress. Many more could be added.</p>
@@ -42,16 +54,16 @@
           <header class="text-center mb-10">
               <h1 class="text-4xl font-bold text-gray-900">The Creation Narrative</h1>
               <p class="text-2xl text-gray-700"><i>A BibleProject Translation</i></p>
-              <p class="text-lg text-gray-600 mt-2">Genesis 1:1-2:3</p>
+              <p class="text-lg text-gray-600 mt-2">Genesis 1:1-2:3 Bereshit Bara</p>
           </header>
 
           <main class="grid grid-cols-1 gap-6">
               <!-- Title -->
-              <div id="title" class="card">
+              <div id="title" class="card show-bara">
                 <h2 class="card-title">Title</h2>
                   <div class="interlinear-grid">
-                      <div class="english-line"><span class="verse">1</span><span class="h7225" data-id="1">In the beginning</span>, <span class="h430" data-id="3">Elohim</span> <b><span class="h1254" data-id="2">created</span></b> <span class="h8064" data-id="5">the skies</span> and <span class="h776" data-id="7">the land</span>.</div>
-                      <div class="hebrew-line"><span class="h7225" data-id="1">בְּרֵאשִׁ֖ית</span> <span class="h1254" data-id="2">בָּרָ֣א</span> <span class="h430" data-id="3">אֱלֹהִ֑ים</span> <span class="h853" data-id="4">אֵ֥ת</span> <span class="h8064" data-id="5">הַשָּׁמַ֖יִם</span> <span class="h853" data-id="6">וְאֵ֥ת</span> <span class="h776" data-id="7">הָאָֽרֶץ</span></div>
+                      <div class="english-line show-bara"><span class="verse">1</span><span class="repeated-bara"><span class="h7225" data-id="1">In the beginning</span></span>, <span class="h430" data-id="3">Elohim</span> <span class="repeated-bara"><b><span class="h1254" data-id="2">created</span></b></span> <span class="h8064" data-id="5">the skies</span> and <span class="h776" data-id="7">the land</span>.</div>
+                      <div class="hebrew-line show-bara"><span class="h7225" data-id="1">בְּרֵאשִׁ֖ית</span> <span class="h1254" data-id="2">בָּרָ֣א</span> <span class="h430" data-id="3">אֱלֹהִ֑ים</span> <span class="h853" data-id="4">אֵ֥ת</span> <span class="h8064" data-id="5">הַשָּׁמַ֖יִם</span> <span class="h853" data-id="6">וְאֵ֥ת</span> <span class="h776" data-id="7">הָאָֽרֶץ</span></div>
                   </div>
               </div>
 
@@ -62,10 +74,10 @@
                       <div class="english-line"><span class="verse">2</span></span>Now, <span class="h776" data-id="8">the land</span> <span class="h1961" data-id="9">was</span> <span class="h8414" data-id="10">wild</span> <span class="h922" data-id="11">and waste</span></div>
                       <div class="hebrew-line"><span class="h776" data-id="8">וְהָאָ֗רֶץ</span> <span class="h1961" data-id="9">הָיְתָ֥ה</span> <span class="h8414" data-id="10">תֹ֙הוּ֙</span> <span class="h922" data-id="11">וָבֹ֔הוּ</span></div>
                       
-                      <div class="english-line"><span class="h2822" data-id="12">and darkness</span> was <span class="repeated-over-the-face"><span class="h5921" data-id="13">over</span> the <span class="h6440" data-id="14">face</span> of</span> <span class="h8415" data-id="15">the watery deep,</span></div>
+                      <div class="english-line line-indent-4"><span class="h2822" data-id="12">and darkness</span> was <span class="repeated-over-the-face"><span class="h5921" data-id="13">over</span> the <span class="h6440" data-id="14">face</span> of</span> <span class="h8415" data-id="15">the watery deep,</span></div>
                       <div class="hebrew-line"><span class="h2822" data-id="12">וְחֹ֖שֶׁךְ</span> <span class="repeated-over-the-face"><span class="h5921" data-id="13">עַל</span> <span class="h6440" data-id="14">פְּנֵ֥י</span></span> <span class="h8415" data-id="15">תְה֑וֹם</span></div>
                       
-                      <div class="english-line">but <span class="h7307" data-id="16">the breath/wind</span> of <span class="h430" data-id="17">Elohim</span> was <span class="h7363" data-id="18">hovering</span> <span class="repeated-over-the-face"><span class="h5921" data-id="19">over</span> the <span class="h6440" data-id="20">face</span> of</span> <span class="h4325" data-id="21">the waters</span>.</div>
+                      <div class="english-line line-indent-4">but <span class="h7307" data-id="16">the breath/wind</span> of <span class="h430" data-id="17">Elohim</span> was <span class="h7363" data-id="18">hovering</span> <span class="repeated-over-the-face"><span class="h5921" data-id="19">over</span> the <span class="h6440" data-id="20">face</span> of</span> <span class="h4325" data-id="21">the waters</span>.</div>
                       <div class="hebrew-line"><span class="h7307" data-id="16">וְר֣וּחַ</span> <span class="h430" data-id="17">אֱלֹהִ֔ים</span> <span class="h7363" data-id="18">מְרַחֶ֖פֶת</span> <span class="repeated-over-the-face"><span class="h5921" data-id="19">עַל</span> <span class="h6440" data-id="20">פְּנֵ֥י</span></span> <span class="h4325" data-id="21">הַמָּֽיִם</span></div>
                   </div>
               </div>
@@ -115,7 +127,7 @@
                         </div>
                   </div>
                   <!-- Day 2 -->
-                  <div id="day2" class="card show-god-said">
+                  <div id="day2" class="card show-god-said show-asah">
                       <h2 class="card-title">Day 2: Environment = Splitting the Waters</h2>
                       <div class="interlinear-grid">
                           <div class="english-line show-god-said"><span class="verse">6</span><span class="repeated-said">and <span class="h430" data-id="54">Elohim</span> <b><span class="h559" data-id="53">said</span></b>,</span> <span class="phrase god-said">2/10</span></div>
@@ -136,8 +148,8 @@
                           <div class="english-line">&nbsp;</div>
                           <div class="hebrew-line">&nbsp;</div>
 
-                          <div class="english-line"><span class="verse">7</span>and <span class="h430" data-id="65">Elohim</span> <b><span class="h6213" data-id="64">made</span></b> the <span class="h7549" data-id="67">dome/raqia</span>,</div>
-                          <div class="hebrew-line"><span class="h6213" data-id="64">וַיַּ֣עַשׂ</span> <span class="h430" data-id="65">אֱלֹהִים֮</span> <span class="h853" data-id="66">אֶת</span> <span class="h7549" data-id="67">לָרָקִ֑יעַ</span></div>
+                          <div class="english-line show-asah"><span class="verse">7</span>and <span class="h430" data-id="65">Elohim</span> <span class="repeated-asah"><b><span class="h6213" data-id="64">made</span></b></span> the <span class="h7549" data-id="67">dome/raqia</span>,</div>
+                          <div class="hebrew-line show-asah"><span class="h6213" data-id="64">וַיַּ֣עַשׂ</span> <span class="h430" data-id="65">אֱלֹהִים֮</span> <span class="h853" data-id="66">אֶת</span> <span class="h7549" data-id="67">לָרָקִ֑יעַ</span></div>
                           
                           <div class="english-line line-indent-4">and he <b><span class="h914" data-id="68">separated</span></b></div>
                           <div class="hebrew-line"><span class="h914" data-id="68">וַיַּבְדֵּ֗ל</span></div>
@@ -168,7 +180,7 @@
                       </div>
                   </div>
                   <!-- Day 3 -->
-                  <div id="day3" class="card show-good show-god-said show-according-to">
+                  <div id="day3" class="card show-good show-god-said show-according-to show-asah">
                       <h2 class="card-title">Day 3: Environment = Land & Vegetation</h2>
                       <div class="interlinear-grid">
                           <div class="english-line show-god-said"><span class="verse">9</span><span class="repeated-said">And <span class="h430" data-id="92">Elohim</span> <b><span class="h559" data-id="91">said</span></b>,</span> <span class="phrase god-said">3/10</span></div>
@@ -215,8 +227,8 @@
                           <div class="english-line show-according-to line-indent-4"><span class="h6212" data-id="121">vegetative plants</span> that <span class="h2232" data-id="122">produce</span> <span class="h2233" data-id="123">seed</span>,</div>
                           <div class="hebrew-line show-according-to"><span class="h6212" data-id="121">עֵ֚שֶׂב</span> <span class="h2232" data-id="122">מַזְרִ֣יעַ</span> <span class="h2233" data-id="123">זַרְעוֹ</span></div>
                           
-                          <div class="english-line line-indent-8 show-according-to"><span class="h6529" data-id="125">fruit</span> <span class="h6086" data-id="124">trees</span> that <span class="h6213" data-id="126">make</span> <span class="h6529" data-id="127">fruit</span> <span class="repeated-according-to"><span class="h4327" data-id="128">according to its kind</span></span>, <span class="phrase according">1/10</span></div>
-                          <div class="hebrew-line show-according-to"><span class="h6086" data-id="124">עֵ֣ץ</span> <span class="h6529" data-id="125">פְּרִי֙</span> <span class="h6213" data-id="126">עֹ֤שֶׂה</span> <span class="h6529" data-id="127">פְּרִי֙</span> <span class="h4327" data-id="128">לְמִינ֔וֹ</span></div>
+                          <div class="english-line line-indent-8 show-according-to show-asah"><span class="h6529" data-id="125">fruit</span> <span class="h6086" data-id="124">trees</span> that <span class="repeated-asah"><b><span class="h6213" data-id="126">make</span></b></span> <span class="h6529" data-id="127">fruit</span> <span class="repeated-according-to"><span class="h4327" data-id="128">according to its kind</span></span>, <span class="phrase according">1/10</span></div>
+                          <div class="hebrew-line show-according-to show-asah"><span class="h6086" data-id="124">עֵ֣ץ</span> <span class="h6529" data-id="125">פְּרִי֙</span> <span class="h6213" data-id="126">עֹ֤שֶׂה</span> <span class="h6529" data-id="127">פְּרִי֙</span> <span class="h4327" data-id="128">לְמִינ֔וֹ</span></div>
                           
                           <div class="english-line line-indent-8"><span class="h834" data-id="129">which</span> has its <span class="h2233" data-id="130">seed</span> <span class="h0" data-id="131">inside it</span>, <span class="h5921" data-id="132">upon</span> the <span class="h776" data-id="133">land</span></div>
                           <div class="hebrew-line"><span class="h834" data-id="129">אֲשֶׁ֥ר</span> <span class="h2233" data-id="130">זַרְעוֹ</span> <span class="h0" data-id="131">ב֖וֹ</span> <span class="h5921" data-id="132">עַל</span> <span class="h776" data-id="133">הָאָ֑רֶץ</span></div>
@@ -239,8 +251,8 @@
                           <div class="english-line line-indent-8 show-good show-according-to"><span class="repeated-according-to"><span class="h4327" data-id="142">according to its kind</span></span> <span class="phrase according">2/10</span></div>
                           <div class="hebrew-line show-good show-according-to"><span class="h4327" data-id="142">לְמִינֵ֑הוּ</span></div>
 
-                          <div class="english-line show-good show-according-to">and <span class="repeated-according-to"><span class="h6086" data-id="143">trees</span> that <span class="h6213" data-id="144">make</span> <span class="h6529" data-id="145">fruit</span></span></div>
-                          <div class="hebrew-line show-good show-according-to"><span class="h6086" data-id="143">וְעֵ֧ץ</span> <span class="h6213" data-id="144">עֹֽשֶׂה</span> <span class="h6529" data-id="145">פְּרִ֛י</span></div>
+                          <div class="english-line show-good show-according-to show-asah">and <span class="repeated-according-to"><span class="h6086" data-id="143">trees</span> that <span class="repeated-asah"><b><span class="h6213" data-id="144">make</span></b></span> <span class="h6529" data-id="145">fruit</span></span></div>
+                          <div class="hebrew-line show-good show-according-to show-asah"><span class="h6086" data-id="143">וְעֵ֧ץ</span> <span class="h6213" data-id="144">עֹֽשֶׂה</span> <span class="h6529" data-id="145">פְּרִ֛י</span></div>
                           
                           <div class="english-line line-indent-4 show-good show-according-to"><span class="repeated-according-to"><span class="h834" data-id="146">which has</span> its <span class="h2233" data-id="147">seed</span> in it <span class="h4327" data-id="149">according to its kind</span></span> <span class="phrase according">3/10</span></div>
                           <div class="hebrew-line show-good show-according-to"><span class="h834" data-id="146">אֲשֶׁ֥ר</span> <span class="h2233" data-id="147">זַרְעוֹ</span> <span class="h0" data-id="148">ב֖וֹ</span> <span class="h4327" data-id="149">לְמִינֵ֑הוּ</span></div>
@@ -262,7 +274,7 @@
                       </div>
                   </div>
                   <!-- Day 4 -->
-                  <div id="day4" class="card show-good show-god-said">
+                  <div id="day4" class="card show-good show-god-said show-asah">
                       <h2 class="card-title">Day 4: Inhabitants = Skies/Heavens</h2>
                       <div class="interlinear-grid">
                         <div class="english-line show-god-said"><span class="verse">14</span><span class="repeated-said">And <span class="h430" data-id="161">Elohim</span> <b><span class="h559" data-id="160">said</span></b>,</span> <span class="phrase god-said">5/10</span></div>
@@ -271,7 +283,7 @@
                         <div class="english-line line-indent-4 show-god-said"><span class="repeated-let">“<span class="h1961" data-id="162">Let there be</span>  <span class="repeated-light-lights"><span class="h3974" data-id="163">lights</span></span> <span class="phrase light">1/5</span></div>
                         <div class="hebrew-line show-god-said"><span class="repeated-let"><span class="h1961" data-id="162">יְהִ֤י</span> <span class="h3974" data-id="163">מְאֹרֹת֙</span></span></div>
                         
-                        <div class="english-line line-indent-4"><span class="h7549" data-id="164">in the dome/raqia of</span> <span class="h8064" data-id="165">the skies</span></div>
+                        <div class="english-line line-indent-4"><span class="h7549" data-id="164">in the dome/raqia</span> of <span class="h8064" data-id="165">the skies</span></div>
                         <div class="hebrew-line"><span class="h7549" data-id="164">בִּרְקִ֣יעַ</span> <span class="h8064" data-id="165">הַשָּׁמַ֔יִם</span></div>
 
                         <div class="english-line line-indent-8">to <span class="h914" data-id="166">separate</span> the <span class="h3117" data-id="168">day</span> from the <span class="h3915" data-id="170">night</span>,</div>
@@ -286,7 +298,7 @@
                         <div class="english-line"><span class="verse">15</span>And let them <span class="h1961" data-id="176">be</span> for  <span class="repeated-light-lights"><span class="h3974" data-id="177">lights</span></span> <span class="phrase light">2/5</span></div>
                         <div class="hebrew-line"><span class="h1961" data-id="176">וְהָי֤וּ</span> <span class="h3974" data-id="177">לִמְאוֹרֹת֙</span></div>
 
-                        <div class="english-line line-indent-4"><span class="h7549" data-id="178">in the dome/raqia of</span> <span class="h8064" data-id="179">the skies</span></div>
+                        <div class="english-line line-indent-4"><span class="h7549" data-id="178">in the dome/raqia</span> of <span class="h8064" data-id="179">the skies</span></div>
                         <div class="hebrew-line"><span class="h7549" data-id="178">בִּרְקִ֣יעַ</span> <span class="h8064" data-id="179">הַשָּׁמַ֔יִם</span></div>
 
                         <div class="english-line line-indent-8"><span class="h215" data-id="180">to give light</span> on <span class="h776" data-id="182">the land</span>.”</div>
@@ -298,8 +310,8 @@
                         <div class="english-line">&nbsp;</div>
                         <div class="hebrew-line">&nbsp;</div>
 
-                        <div class="english-line"><span class="verse">16</span>and <span class="h430" data-id="186">Elohim</span> <b><span class="h6213" data-id="185">made</span></b>  <span class="repeated-light-lights">the</span> <span class="h8147" data-id="188">two</span> <span class="h1419" data-id="190">great</span>  <span class="repeated-light-lights"><span class="h3974" data-id="189">lights</span></span>, <span class="phrase light">3/5</span></div>
-                        <div class="hebrew-line"><span class="h6213" data-id="185">וַיַּ֣עַשׂ</span> <span class="h430" data-id="186">אֱלֹהִ֔ים</span> <span class="h853" data-id="187">אֶת</span> <span class="h8147" data-id="188">שְׁנֵ֥י</span> <span class="h3974" data-id="189">הַמָּא֤וֹר</span> <span class="h1419" data-id="190">הַגָּדֹל֙</span></div>
+                        <div class="english-line show-asah"><span class="verse">16</span>and <span class="h430" data-id="186">Elohim</span> <span class="repeated-asah"><b><span class="h6213" data-id="185">made</span></b></span>  <span class="repeated-light-lights">the</span> <span class="h8147" data-id="188">two</span> <span class="h1419" data-id="190">great</span>  <span class="repeated-light-lights"><span class="h3974" data-id="189">lights</span></span>, <span class="phrase light">3/5</span></div>
+                        <div class="hebrew-line show-asah"><span class="h6213" data-id="185">וַיַּ֣עַשׂ</span> <span class="h430" data-id="186">אֱלֹהִ֔ים</span> <span class="h853" data-id="187">אֶת</span> <span class="h8147" data-id="188">שְׁנֵ֥י</span> <span class="h3974" data-id="189">הַמָּא֤וֹר</span> <span class="h1419" data-id="190">הַגָּדֹל֙</span></div>
                         
                         <div class="english-line line-indent-4 show-good"><span class="repeated-light-lights">the</span> <span class="h1419" data-id="193">great</span>  <span class="repeated-light-lights"><span class="h3974" data-id="192">light</span></span> <span class="phrase light">4/5</span> to <span class="h4475" data-id="194">rule</span> the <span class="h3117" data-id="195">day</span>,</div>
                         <div class="hebrew-line show-good"><span class="h853" data-id="191">אֶת</span> <span class="h3974" data-id="192">הַמָּא֤וֹר</span> <span class="h1419" data-id="193">הַגָּדֹל֙</span> <span class="h4475" data-id="194">לְמֶמְשֶׁ֣לֶת</span> <span class="h3117" data-id="195">הַיּ֔וֹם</span></div>
@@ -313,7 +325,7 @@
                         <div class="english-line"><span class="verse">17</span>And <span class="h430" data-id="205">Elohim</span> <b><span class="h5414" data-id="203">placed</span></b> them</div>
                         <div class="hebrew-line"><span class="h5414" data-id="203">וַיִּתֵּ֥ן</span> <span class="h853" data-id="204">אֹתָ֛ם</span> <span class="h430" data-id="205">אֱלֹהִ֖ים</span></div>
                         
-                        <div class="english-line line-indent-4"><span class="h7549" data-id="206">in the dome/raqia of the</span> <span class="h8064" data-id="207">skies</span></div>
+                        <div class="english-line line-indent-4"><span class="h7549" data-id="206">in the dome/raqia</span> of <span class="h8064" data-id="207">the skies</span></div>
                         <div class="hebrew-line"><span class="h7549" data-id="206">בִּרְקִ֣יעַ</span> <span class="h8064" data-id="207">הַשָּׁמָ֑יִם</span></div>
                         
                         <div class="english-line line-indent-8 show-good">to <span class="h215" data-id="208">give light</span> on <span class="h776" data-id="210">the land</span>,</div>
@@ -342,7 +354,7 @@
                       </div>
                   </div>
                   <!-- Day 5 -->
-                  <div id="day5" class="card show-good show-god-said show-according-to">
+                  <div id="day5" class="card show-good show-god-said show-according-to show-bara">
                       <h2 class="card-title">Day 5: Inhabitants = Waters & Skies</h2>
                       <div class="interlinear-grid">
                         <div class="english-line show-god-said"><span class="verse">20</span><span class="repeated-said">and <span class="h430" data-id="230">Elohim</span> <b><span class="h559" data-id="229">said</span></b>,</span> <span class="phrase god-said">6/10</span></div>
@@ -360,32 +372,32 @@
                         <div class="english-line">&nbsp;</div>
                         <div class="hebrew-line">&nbsp;</div>
 
-                        <div class="english-line show-good"><span class="verse">21</span>and <span class="h430" data-id="245">Elohim</span> <b><span class="h1254" data-id="244">created</span></b> the <span class="h1419" data-id="248">great</span> <span class="h8577" data-id="247">sea-monsters</span></div>
-                        <div class="hebrew-line show-good"><span class="h1254" data-id="244">וַיִּבְרָ֣א</span> <span class="h430" data-id="245">אֱלֹהִ֖ים</span> <span class="h853" data-id="246">אֶת</span> <span class="h8577" data-id="247">הַתַּנִּינִ֖ם</span> <span class="h1419" data-id="248">הַגְּדֹלִ֑ים</span></div>
+                        <div class="english-line show-good show-bara"><span class="verse">21</span>and <span class="h430" data-id="245">Elohim</span> <span class="repeated-bara"><b><span class="h1254" data-id="244">created</span></b></span> the <span class="h1419" data-id="248">great</span> <span class="h8577" data-id="247">sea-monsters</span></div>
+                        <div class="hebrew-line show-good show-bara"><span class="h1254" data-id="244">וַיִּבְרָ֣א</span> <span class="h430" data-id="245">אֱלֹהִ֖ים</span> <span class="h853" data-id="246">אֶת</span> <span class="h8577" data-id="247">הַתַּנִּינִ֖ם</span> <span class="h1419" data-id="248">הַגְּדֹלִ֑ים</span></div>
 
-                        <div class="english-line line-indent-4 show-good show-according-to">and <span class="repeated-according-to"><span class="h3605" data-id="250">every</span> <span class="h2416" data-id="252">living</span> <span class="h5315" data-id="251">creature</span> that <span class="h7430" data-id="253">moves</span>,</span></div>
-                        <div class="hebrew-line show-good show-according-to"><span class="h853" data-id="249">וְאֵ֣ת</span> <span class="h3605" data-id="250">כָּל</span> <span class="h5315" data-id="251">נֶ֣פֶשׁ</span> <span class="h2416" data-id="252">הַֽחַיָּ֣ה</span> <span class="h7430" data-id="253">הָֽרֹמֶ֡שֶׂת</span></div>
+                        <div class="english-line line-indent-4 show-good show-according-to show-bara">and <span class="repeated-according-to"><span class="h3605" data-id="250">every</span> <span class="h2416" data-id="252">living</span> <span class="h5315" data-id="251">creature</span> that <span class="h7430" data-id="253">moves</span>,</span></div>
+                        <div class="hebrew-line show-good show-according-to show-bara"><span class="h853" data-id="249">וְאֵ֣ת</span> <span class="h3605" data-id="250">כָּל</span> <span class="h5315" data-id="251">נֶ֣פֶשׁ</span> <span class="h2416" data-id="252">הַֽחַיָּ֣ה</span> <span class="h7430" data-id="253">הָֽרֹמֶ֡שֶׂת</span></div>
                         
-                        <div class="english-line line-indent-4 show-good show-according-to"><span class="repeated-according-to">with <span class="h834" data-id="254">which</span> <span class="h4325" data-id="256">the waters</span> <span class="h8317" data-id="255">swarmed</span> <span class="h4327" data-id="257">after their kind</span>,</span> <span class="phrase according">4/10</span></div>
-                        <div class="hebrew-line show-good show-according-to"><span class="h834" data-id="254">אֲשֶׁר֩</span> <span class="h8317" data-id="255">שָׁרְצ֨וּ</span> <span class="h4325" data-id="256">הַמַּ֜יִם</span> <span class="h4327" data-id="257">לְמִינֵ֔הוּ</span></div>
+                        <div class="english-line line-indent-4 show-good show-according-to show-bara"><span class="repeated-according-to">with <span class="h834" data-id="254">which</span> <span class="h4325" data-id="256">the waters</span> <span class="h8317" data-id="255">swarmed</span> <span class="h4327" data-id="257">after their kind</span>,</span> <span class="phrase according">4/10</span></div>
+                        <div class="hebrew-line show-good show-according-to show-bara"><span class="h834" data-id="254">אֲשֶׁר֩</span> <span class="h8317" data-id="255">שָׁרְצ֨וּ</span> <span class="h4325" data-id="256">הַמַּ֜יִם</span> <span class="h4327" data-id="257">לְמִינֵ֔הוּ</span></div>
                         
-                        <div class="english-line line-indent-4 show-good show-according-to">and <span class="repeated-according-to"><span class="h3605" data-id="259">every</span> <span class="h5775" data-id="260">bird</span> of <span class="h3671" data-id="261">wing</span> <span class="h4327" data-id="262">after its kind</span>;</span> <span class="phrase according">5/10</span></div>
-                        <div class="hebrew-line show-good show-according-to"><span class="h853" data-id="258">וְאֵ֨ת</span> <span class="h3605" data-id="259">כָּל</span> <span class="h5775" data-id="260">ע֤וֹף</span> <span class="h3671" data-id="261">כָּנָף֙</span> <span class="h4327" data-id="262">לְמִינֵ֔הוּ</span></div>
+                        <div class="english-line line-indent-4 show-good show-according-to show-bara">and <span class="repeated-according-to"><span class="h3605" data-id="259">every</span> <span class="h5775" data-id="260">bird</span> of <span class="h3671" data-id="261">wing</span> <span class="h4327" data-id="262">after its kind</span>;</span> <span class="phrase according">5/10</span></div>
+                        <div class="hebrew-line show-good show-according-to show-bara"><span class="h853" data-id="258">וְאֵ֨ת</span> <span class="h3605" data-id="259">כָּל</span> <span class="h5775" data-id="260">ע֤וֹף</span> <span class="h3671" data-id="261">כָּנָף֙</span> <span class="h4327" data-id="262">לְמִינֵ֔הוּ</span></div>
 
                         <div class="english-line show-good"><span class="repeated-good">and <span class="h430" data-id="264">Elohim</span> <b><span class="h7200" data-id="263">saw</span></b> that it <span class="h3588" data-id="265">was</span> <span class="h2896" data-id="266">good</span>.</span> <span class="phrase good">5/7</span></div>
                         <div class="hebrew-line show-good"><span class="h7200" data-id="263">וַיַּ֥רְא</span> <span class="h430" data-id="264">אֱלֹהִ֖ים</span> <span class="h3588" data-id="265">כִּי</span> <span class="h2896" data-id="266">טֽוֹב</span></div>
 
-                        <div class="english-line"><span class="verse">22</span>And <span class="h430" data-id="269">Elohim</span> <b><span class="h1288" data-id="267">blessed</span></b> them, <span class="h559" data-id="270">saying</span>,</div>
-                        <div class="hebrew-line"><span class="h1288" data-id="267">וַיְבָ֧רֶךְ</span> <span class="h853" data-id="268">אֹתָ֛ם</span> <span class="h430" data-id="269">אֱלֹהִ֖ים</span> <span class="h559" data-id="270">לֵאמֹ֑ר</span></div>
+                        <div class="english-line show-bara"><span class="verse">22</span>And <span class="h430" data-id="269">Elohim</span> <span class="repeated-bara"><b><span class="h1288" data-id="267">blessed</span></b></span> them, <span class="h559" data-id="270">saying</span>,</div>
+                        <div class="hebrew-line show-bara"><span class="h1288" data-id="267">וַיְבָ֧רֶךְ</span> <span class="h853" data-id="268">אֹתָ֛ם</span> <span class="h430" data-id="269">אֱלֹהִ֖ים</span> <span class="h559" data-id="270">לֵאמֹ֑ר</span></div>
 
-                        <div class="english-line line-indent-4">“<span class="h6509" data-id="271">Be fruitful</span> and <span class="h7235" data-id="272">multiply</span>,</div>
-                        <div class="hebrew-line"><span class="h6509" data-id="271">פְּר֣וּ</span> <span class="h7235" data-id="272">יִ֥רֶב</span></div>
+                        <div class="english-line show-bara line-indent-4">“<span class="h6509" data-id="271">Be fruitful</span> and <span class="h7235" data-id="272">multiply</span>,</div>
+                        <div class="hebrew-line show-bara"><span class="h6509" data-id="271">פְּר֣וּ</span> <span class="h7235" data-id="272">יִ֥רֶב</span></div>
 
-                        <div class="english-line line-indent-4">and <span class="h4390" data-id="273">fill</span> the <span class="h4325" data-id="275">waters</span> in the <span class="h3220" data-id="276">seas</span>,</div>
-                        <div class="hebrew-line"><span class="h4390" data-id="273">וּמִלְא֤וּ</span> <span class="h853" data-id="274">אֶת</span> <span class="h4325" data-id="275">הַמַּ֙יִם֙</span></div>
+                        <div class="english-line show-bara line-indent-4">and <span class="h4390" data-id="273">fill</span> the <span class="h4325" data-id="275">waters</span> in the <span class="h3220" data-id="276">seas</span>,</div>
+                        <div class="hebrew-line show-bara"><span class="h4390" data-id="273">וּמִלְא֤וּ</span> <span class="h853" data-id="274">אֶת</span> <span class="h4325" data-id="275">הַמַּ֙יִם֙</span></div>
                         
-                        <div class="english-line line-indent-4">and let <span class="h5775" data-id="277">birds</span> <span class="h7235" data-id="278">multiply</span> on the <span class="h776" data-id="279">land</span>.”</div>
-                        <div class="hebrew-line"><span class="h3220" data-id="276">בַּיַּמִּ֔ים</span> <span class="h5775" data-id="277">וְהָע֖וֹף</span> <span class="h7235" data-id="278">יִ֥רֶב</span> <span class="h776" data-id="279">בָּאָֽרֶץ</span></div>
+                        <div class="english-line show-bara line-indent-4">and let <span class="h5775" data-id="277">birds</span> <span class="h7235" data-id="278">multiply</span> on the <span class="h776" data-id="279">land</span>.”</div>
+                        <div class="hebrew-line show-bara"><span class="h3220" data-id="276">בַּיַּמִּ֔ים</span> <span class="h5775" data-id="277">וְהָע֖וֹף</span> <span class="h7235" data-id="278">יִ֥רֶב</span> <span class="h776" data-id="279">בָּאָֽרֶץ</span></div>
 
                         <div class="english-line">&nbsp;</div>
                         <div class="hebrew-line">&nbsp;</div>
@@ -401,7 +413,7 @@
                     </div>
                   </div>
                   <!-- Day 6 -->
-                  <div id="day6" class="card show-good show-god-said show-according-to">
+                  <div id="day6" class="card show-good show-god-said show-according-to show-bara show-asah">
                       <h2 class="card-title">Day 6: Inhabitants = Land Animals & Humans</h2>
                       <div class="interlinear-grid">
                         <div class="english-line show-god-said"><span class="verse">24</span><span class="repeated-said">And <span class="h430" data-id="287">Elohim</span> <b><span class="h559" data-id="286">said</span></b>,</span> <span class="phrase god-said">7/10</span></div>
@@ -425,40 +437,40 @@
                         <div class="english-line">&nbsp;</div>
                         <div class="hebrew-line">&nbsp;</div>
 
-                        <div class="english-line show-good"><span class="verse">25</span>and <span class="h430" data-id="301">Elohim</span> <b><span class="h6213" data-id="300">made</span></b></div>
-                        <div class="hebrew-line show-good"><span class="h6213" data-id="300">וַיַּ֣עַשׂ</span> <span class="h430" data-id="301">אֱלֹהִ֖ים</span></div>
+                        <div class="english-line show-good show-asah"><span class="verse">25</span>and <span class="h430" data-id="301">Elohim</span> <span class="repeated-asah"><b><span class="h6213" data-id="300">made</span></b></span></div>
+                        <div class="hebrew-line show-good show-asah"><span class="h6213" data-id="300">וַיַּ֣עַשׂ</span> <span class="h430" data-id="301">אֱלֹהִ֖ים</span></div>
 
-                        <div class="english-line line-indent-4 show-good show-according-to"><span class="repeated-according-to">the <span class="h2416" data-id="303">beasts of the</span> <span class="h776" data-id="304">land</span> <span class="h4327" data-id="305">according to their kind</span>,</span> <span class="phrase according">8/10</span></div>
-                        <div class="hebrew-line show-good show-according-to"><span class="h853" data-id="302">אֶת</span> <span class="h2416" data-id="303">חַיַּ֨ת</span> <span class="h776" data-id="304">הָאָ֜רֶץ</span> <span class="h4327" data-id="305">לְמִינֵ֑הוּ</span></div>
+                        <div class="english-line line-indent-4 show-good show-according-to show-asah"><span class="repeated-according-to">the <span class="h2416" data-id="303">beasts of the</span> <span class="h776" data-id="304">land</span> <span class="h4327" data-id="305">according to their kind</span>,</span> <span class="phrase according">8/10</span></div>
+                        <div class="hebrew-line show-good show-according-to show-asah"><span class="h853" data-id="302">אֶת</span> <span class="h2416" data-id="303">חַיַּ֨ת</span> <span class="h776" data-id="304">הָאָ֜רֶץ</span> <span class="h4327" data-id="305">לְמִינֵ֑הוּ</span></div>
 
-                        <div class="english-line line-indent-4 show-good show-according-to">and <span class="repeated-according-to">the <span class="h929" data-id="307">cattle</span> <span class="h4327" data-id="308">according to their kind</span>,</span> <span class="phrase according">9/10</span></div>
-                        <div class="hebrew-line show-good show-according-to"><span class="h853" data-id="306">וְאֶת</span> <span class="h929" data-id="307">הַבְּהֵמָה֙</span> <span class="h4327" data-id="308">לְמִינֵ֑הוּ</span></div>
+                        <div class="english-line line-indent-4 show-good show-according-to show-asah">and <span class="repeated-according-to">the <span class="h929" data-id="307">cattle</span> <span class="h4327" data-id="308">according to their kind</span>,</span> <span class="phrase according">9/10</span></div>
+                        <div class="hebrew-line show-good show-according-to show-asah"><span class="h853" data-id="306">וְאֶת</span> <span class="h929" data-id="307">הַבְּהֵמָה֙</span> <span class="h4327" data-id="308">לְמִינֵ֑הוּ</span></div>
 
-                        <div class="english-line line-indent-4 show-good show-according-to">and <span class="repeated-according-to">the <span class="h7431" data-id="311">creepers</span> of the <span class="h127" data-id="312">ground</span> <span class="h4327" data-id="313">according to its kind</span></span> <span class="phrase according">10/10</span></div>
-                        <div class="hebrew-line show-good show-according-to"><span class="h853" data-id="309">וְאֵ֛ת</span> <span class="h3605" data-id="310">כָּל</span> <span class="h7431" data-id="311">רֶ֥מֶשׂ</span> <span class="h127" data-id="312">הָֽאֲדָמָ֖ה</span> <span class="h4327" data-id="313">לְמִינֵ֑הוּ</span></div>
+                        <div class="english-line line-indent-4 show-good show-according-to show-asah">and <span class="repeated-according-to">the <span class="h7431" data-id="311">creepers</span> of the <span class="h127" data-id="312">ground</span> <span class="h4327" data-id="313">according to its kind</span></span> <span class="phrase according">10/10</span></div>
+                        <div class="hebrew-line show-good show-according-to show-asah"><span class="h853" data-id="309">וְאֵ֛ת</span> <span class="h3605" data-id="310">כָּל</span> <span class="h7431" data-id="311">רֶ֥מֶשׂ</span> <span class="h127" data-id="312">הָֽאֲדָמָ֖ה</span> <span class="h4327" data-id="313">לְמִינֵ֑הוּ</span></div>
 
                         <div class="english-line show-good"><span class="repeated-good">and <span class="h430" data-id="315">Elohim</span> <b><span class="h7200" data-id="314">saw</span></b> that <span class="h3588" data-id="316">it was</span> <span class="h2896" data-id="317">good</span>.</span> <span class="phrase good">6/7</span></div>
                         <div class="hebrew-line show-good"><span class="h7200" data-id="314">וַיַּ֥רְא</span> <span class="h430" data-id="315">אֱלֹהִ֖ים</span> <span class="h3588" data-id="316">כִּי</span> <span class="h2896" data-id="317">טֽוֹב</span></div>
                         
-                        <div class="english-line show-god-said show-according-to">&nbsp;</div>
-                        <div class="hebrew-line show-god-said show-according-to">&nbsp;</div>
+                        <div class="english-line show-god-said show-according-to show-asah">&nbsp;</div>
+                        <div class="hebrew-line show-god-said show-according-to show-asah">&nbsp;</div>
 
                         <hr><hr>
 
-                        <div class="english-line show-god-said show-according-to">&nbsp;</div>
-                        <div class="hebrew-line show-god-said show-according-to">&nbsp;</div>
+                        <div class="english-line show-god-said show-according-to show-asah">&nbsp;</div>
+                        <div class="hebrew-line show-god-said show-according-to show-asah">&nbsp;</div>
 
                         <div class="english-line show-god-said"><span class="verse">26</span><span class="repeated-said"><span class="h430" data-id="319">Elohim</span> <b><span class="h559" data-id="318">said</span></b>,</span> <span class="phrase god-said">8/10</span></div>
                         <div class="hebrew-line show-god-said"><span class="h559" data-id="318">וַיֹּ֣אמֶר</span> <span class="h430" data-id="319">אֱלֹהִ֔ים</span></div>
                         
-                        <div class="english-line line-indent-4 show-god-said show-according-to ">“Let <span class="h6213" data-id="320">us make</span> <span class="repeated-according-to"><span class="h120" data-id="321">human</span></span></div>
-                        <div class="hebrew-line show-god-said show-according-to "><span class="h6213" data-id="320">נַֽעֲשֶׂ֥ה</span> <span class="h120" data-id="321">אָדָ֛ם</span></div>
+                        <div class="english-line line-indent-4 show-god-said show-according-to show-asah">“Let <span class="repeated-asah"><b><span class="h6213" data-id="320">us make</span></b></span> <span class="repeated-according-to"><span class="h120" data-id="321">human</span></span></div>
+                        <div class="hebrew-line show-god-said show-according-to show-asah"><span class="h6213" data-id="320">נַֽעֲשֶׂ֥ה</span> <span class="h120" data-id="321">אָדָ֛ם</span></div>
 
-                        <div class="english-line line-indent-8 show-god-said show-according-to "><span class="h6754" data-id="322">in our image</span>,</div>
-                        <div class="hebrew-line show-god-said show-according-to "><span class="h6754" data-id="322">בְּצַלְמֵ֖נוּ</span></div>
+                        <div class="english-line line-indent-8 show-god-said show-according-to show-asah"><span class="h6754" data-id="322">in our image</span>,</div>
+                        <div class="hebrew-line show-god-said show-according-to show-asah"><span class="h6754" data-id="322">בְּצַלְמֵ֖נוּ</span></div>
 
-                        <div class="english-line line-indent-8 show-god-said show-according-to "><span class="repeated-according-to">according to <span class="h1823" data-id="323">our likeness</span>;</span> <span class="phrase according">Bonus</span></div>
-                        <div class="hebrew-line show-god-said show-according-to "><span class="h1823" data-id="323">כִּדְמוּתֵ֑נוּ</span></div>
+                        <div class="english-line line-indent-8 show-god-said show-according-to show-asah"><span class="repeated-according-to">according to <span class="h1823" data-id="323">our likeness</span>;</span> <span class="phrase according">Bonus</span></div>
+                        <div class="hebrew-line show-god-said show-according-to show-asah"><span class="h1823" data-id="323">כִּדְמוּתֵ֑נוּ</span></div>
 
                         <div class="english-line line-indent-4 show-god-said">and let them <span class="h7287" data-id="324">rule</span></div>
                         <div class="hebrew-line show-god-said"><span class="h7287" data-id="324">וְיִרְדּוּ֩</span></div>
@@ -481,46 +493,46 @@
                         <div class="english-line show-god-said">&nbsp;</div>
                         <div class="hebrew-line show-god-said">&nbsp;</div>
 
-                        <div class="english-line show-according-to"><span class="verse">27</span>and <span class="h430" data-id="338">Elohim</span> <b><span class="h1254" data-id="337">created</span></b> <span class="h120" data-id="340">human</span> in his <span class="h6754" data-id="341">image</span>,</div>
-                        <div class="hebrew-line show-according-to"><span class="h1254" data-id="337">בָּרָ֥א</span> <span class="h430" data-id="338">אֱלֹהִ֖ים</span> <span class="h853" data-id="339">אֶת</span> <span class="h120" data-id="340">הָֽאָדָם֙</span> <span class="h6754" data-id="341">בְּצֶ֥לֶם</span></div>
+                        <div class="english-line show-according-to show-bara"><span class="verse">27</span>and <span class="h430" data-id="338">Elohim</span> <span class="repeated-bara"><b><span class="h1254" data-id="337">created</span></b></span> <span class="h120" data-id="340">human</span> in his <span class="h6754" data-id="341">image</span>,</div>
+                        <div class="hebrew-line show-according-to show-bara"><span class="h1254" data-id="337">בָּרָ֥א</span> <span class="h430" data-id="338">אֱלֹהִ֖ים</span> <span class="h853" data-id="339">אֶת</span> <span class="h120" data-id="340">הָֽאָדָם֙</span> <span class="h6754" data-id="341">בְּצֶ֥לֶם</span></div>
 
-                        <div class="english-line line-indent-4 show-according-to">in the <span class="h6754" data-id="342">image of</span> <span class="h430" data-id="343">Elohim</span> he <span class="h1254" data-id="344">created</span> him;</div>
-                        <div class="hebrew-line show-according-to"><span class="h6754" data-id="342">בְּצֶ֥לֶם</span> <span class="h430" data-id="343">אֱלֹהִ֖ים</span> <span class="h1254" data-id="344">בָּרָ֥א</span> <span class="h853" data-id="345">אֹת֑וֹ</span></div>
+                        <div class="english-line line-indent-4 show-according-to show-bara">in the <span class="h6754" data-id="342">image of</span> <span class="h430" data-id="343">Elohim</span> he <span class="repeated-bara"><b><span class="h1254" data-id="344">created</span></b></span> him;</div>
+                        <div class="hebrew-line show-according-to show-bara"><span class="h6754" data-id="342">בְּצֶ֥לֶם</span> <span class="h430" data-id="343">אֱלֹהִ֖ים</span> <span class="h1254" data-id="344">בָּרָ֥א</span> <span class="h853" data-id="345">אֹת֑וֹ</span></div>
 
-                        <div class="english-line line-indent-8 show-according-to"><span class="h2145" data-id="346">male</span> and <span class="h5347" data-id="347">female</span> he <span class="h1254" data-id="348">created</span> them.</div>
-                        <div class="hebrew-line show-according-to"><span class="h2145" data-id="346">זָכָ֥ר</span> <span class="h5347" data-id="347">וּנְקֵבָ֖ה</span> <span class="h1254" data-id="348">בָּרָ֥א</span> <span class="h853" data-id="349">אֹתָֽם</span></div>
+                        <div class="english-line line-indent-8 show-according-to show-bara"><span class="h2145" data-id="346">male</span> and <span class="h5347" data-id="347">female</span> he <span class="repeated-bara"><b><span class="h1254" data-id="348">created</span></b></span> them.</div>
+                        <div class="hebrew-line show-according-to show-bara"><span class="h2145" data-id="346">זָכָ֥ר</span> <span class="h5347" data-id="347">וּנְקֵבָ֖ה</span> <span class="h1254" data-id="348">בָּרָ֥א</span> <span class="h853" data-id="349">אֹתָֽם</span></div>
 
-                        <div class="english-line"><span class="verse">28</span>And <span class="h430" data-id="352">Elohim</span> <b><span class="h1288" data-id="350">blessed</span></b> them,</div>
-                        <div class="hebrew-line"><span class="h1288" data-id="350">וַיְבָ֣רֶךְ</span> <span class="h853" data-id="351">אֹתָם֮</span> <span class="h430" data-id="352">אֱלֹהִ֗ים</span></div>
+                        <div class="english-line show-bara"><span class="verse">28</span>And <span class="h430" data-id="352">Elohim</span> <span class="repeated-bara"><b><span class="h1288" data-id="350">blessed</span></b></span> them,</div>
+                        <div class="hebrew-line show-bara"><span class="h1288" data-id="350">וַיְבָ֣רֶךְ</span> <span class="h853" data-id="351">אֹתָם֮</span> <span class="h430" data-id="352">אֱלֹהִ֗ים</span></div>
 
-                        <div class="english-line line-indent-4 show-god-said"><span class="repeated-said">and <span class="h430" data-id="355">Elohim</span> <b><span class="h559" data-id="353">said</span></b> to them,</span> <span class="phrase god-said">9/10</span></div>
-                        <div class="hebrew-line show-god-said"><span class="h559" data-id="353">וַיֹּ֨אמֶר</span> <span class="h0" data-id="354">לָהֶ֜ם</span> <span class="h430" data-id="355">אֱלֹהִ֗ים</span></div>
+                        <div class="english-line show-bara line-indent-4 show-god-said"><span class="repeated-said">and <span class="h430" data-id="355">Elohim</span> <b><span class="h559" data-id="353">said</span></b> to them,</span> <span class="phrase god-said">9/10</span></div>
+                        <div class="hebrew-line show-god-said show-bara"><span class="h559" data-id="353">וַיֹּ֨אמֶר</span> <span class="h0" data-id="354">לָהֶ֜ם</span> <span class="h430" data-id="355">אֱלֹהִ֗ים</span></div>
 
-                        <div class="english-line line-indent-8 show-god-said">“<span class="h6509" data-id="356">Be fruitful</span> and <span class="h7235" data-id="357">multiply</span>,</div>
-                        <div class="hebrew-line show-god-said"><span class="h6509" data-id="356">פְּר֥וּ</span> <span class="h7235" data-id="357">וּרְב֛וּ</span></div>
+                        <div class="english-line line-indent-8 show-god-said show-bara">“<span class="h6509" data-id="356">Be fruitful</span> and <span class="h7235" data-id="357">multiply</span>,</div>
+                        <div class="hebrew-line show-god-said show-bara"><span class="h6509" data-id="356">פְּר֥וּ</span> <span class="h7235" data-id="357">וּרְב֛וּ</span></div>
                         
-                        <div class="english-line line-indent-8 show-god-said">and <span class="h4390" data-id="358">fill</span> the <span class="h776" data-id="360">land</span>,</div>
-                        <div class="hebrew-line show-god-said"><span class="h4390" data-id="358">וּמִלְא֥וּ</span> <span class="h853" data-id="359">אֶת</span> <span class="h776" data-id="360">הָאָֽרֶץ</span></div>
+                        <div class="english-line line-indent-8 show-god-said show-bara">and <span class="h4390" data-id="358">fill</span> the <span class="h776" data-id="360">land</span>,</div>
+                        <div class="hebrew-line show-god-said show-bara"><span class="h4390" data-id="358">וּמִלְא֥וּ</span> <span class="h853" data-id="359">אֶת</span> <span class="h776" data-id="360">הָאָֽרֶץ</span></div>
 
-                        <div class="english-line line-indent-8 show-god-said">and <span class="h3533" data-id="361">subdue</span> it;</div>
-                        <div class="hebrew-line show-god-said"><span class="h3533" data-id="361">וְכִבְשֻׁ֑הָ</span></div>
+                        <div class="english-line line-indent-8 show-god-said show-bara">and <span class="h3533" data-id="361">subdue</span> it;</div>
+                        <div class="hebrew-line show-god-said show-bara"><span class="h3533" data-id="361">וְכִבְשֻׁ֑הָ</span></div>
 
-                        <div class="english-line line-indent-8">and <span class="h7287" data-id="362">rule</span> over the <span class="h1710" data-id="363">fish of the</span> <span class="h3220" data-id="364">sea</span></div>
-                        <div class="hebrew-line"><span class="h7287" data-id="362">וּרְד֞וּ</span> <span class="h1710" data-id="363">בִּדְגַ֤ת</span> <span class="h3220" data-id="364">הַיָּם֙</span></div>
+                        <div class="english-line show-bara line-indent-8">and <span class="h7287" data-id="362">rule</span> over the <span class="h1710" data-id="363">fish of the</span> <span class="h3220" data-id="364">sea</span></div>
+                        <div class="hebrew-line show-bara"><span class="h7287" data-id="362">וּרְד֞וּ</span> <span class="h1710" data-id="363">בִּדְגַ֤ת</span> <span class="h3220" data-id="364">הַיָּם֙</span></div>
                         
-                        <div class="english-line line-indent-8">and over the <span class="h5775" data-id="365">birds of the</span> <span class="h8064" data-id="366">sky</span></div>
-                        <div class="hebrew-line"><span class="h5775" data-id="365">וּבְע֣וֹף</span> <span class="h8064" data-id="366">הַשָּׁמַ֔יִם</span></div>
+                        <div class="english-line show-bara line-indent-8">and over the <span class="h5775" data-id="365">birds of the</span> <span class="h8064" data-id="366">sky</span></div>
+                        <div class="hebrew-line show-bara"><span class="h5775" data-id="365">וּבְע֣וֹף</span> <span class="h8064" data-id="366">הַשָּׁמַ֔יִם</span></div>
 
-                        <div class="english-line line-indent-8">and over <span class="h2416" data-id="368">living creatures</span> that <span class="h7430" data-id="369">creep</span> on the <span class="h776" data-id="371">land</span>.”</div>
-                        <div class="hebrew-line"><span class="h3605" data-id="367">וּבְכָל</span> <span class="h2416" data-id="368">חַיָּ֖ה</span> <span class="h7430" data-id="369">הָֽרֹמֶ֥שֶׂת</span> <span class="h5921" data-id="370">עַל</span> <span class="h776" data-id="371">הָאָֽרֶץ</span></div>
+                        <div class="english-line show-bara line-indent-8">and over <span class="h2416" data-id="368">living creatures</span> that <span class="h7430" data-id="369">creep</span> on the <span class="h776" data-id="371">land</span>.”</div>
+                        <div class="hebrew-line show-bara"><span class="h3605" data-id="367">וּבְכָל</span> <span class="h2416" data-id="368">חַיָּ֖ה</span> <span class="h7430" data-id="369">הָֽרֹמֶ֥שֶׂת</span> <span class="h5921" data-id="370">עַל</span> <span class="h776" data-id="371">הָאָֽרֶץ</span></div>
                         
-                        <div class="english-line show-god-said show-good show-according-to">&nbsp;</div>
-                        <div class="hebrew-line show-god-said show-good show-according-to">&nbsp;</div>
+                        <div class="english-line show-god-said show-good show-according-to show-asah">&nbsp;</div>
+                        <div class="hebrew-line show-god-said show-good show-according-to show-asah">&nbsp;</div>
 
                         <hr><hr>
 
-                        <div class="english-line show-god-said show-good">&nbsp;</div>
-                        <div class="hebrew-line show-god-said show-good">&nbsp;</div>
+                        <div class="english-line show-god-said show-good show-asah">&nbsp;</div>
+                        <div class="hebrew-line show-god-said show-good show-asah">&nbsp;</div>
 
                         <div class="english-line show-god-said"><span class="verse">29</span><span class="repeated-said"><span class="h430" data-id="373">Elohim</span> <b><span class="h559" data-id="372">said</span></b>,</span> <span class="phrase god-said">10/10</span></div>
                         <div class="hebrew-line show-god-said"><span class="h559" data-id="372">וַיֹּ֣אמֶר</span> <span class="h430" data-id="373">אֱלֹהִ֗ים</span></div>
@@ -558,11 +570,11 @@
                         <div class="english-line show-god-said">and <span class="h1961" data-id="418">it was</span> <span class="h3651" data-id="419">so</span>.</div>
                         <div class="hebrew-line show-god-said"><span class="h1961" data-id="418">וַֽיְהִי</span> <span class="h3651" data-id="419">כֵֽן</span></div>
 
-                        <div class="english-line show-good"><span class="verse">31</span><span class="repeated-good"><span class="h430" data-id="421">Elohim</span> <b><span class="h7200" data-id="420">saw</span></b> <span class="h3605" data-id="423">all</span> that He had <span class="h6213" data-id="425">made</span>,</span></div>
-                        <div class="hebrew-line show-good"><span class="h7200" data-id="420">וַיַּ֤רְא</span> <span class="h430" data-id="421">אֱלֹהִים֙</span> <span class="h853" data-id="422">אֶת</span> <span class="h3605" data-id="423">כָּל</span> <span class="h834" data-id="424">אֲשֶׁ֣ר</span> <span class="h6213" data-id="425">עָשָׂ֔ה</span></div>
+                        <div class="english-line show-good show-asah"><span class="verse">31</span><span class="repeated-good"><span class="h430" data-id="421">Elohim</span> <b><span class="h7200" data-id="420">saw</span></b> <span class="h3605" data-id="423">all</span> that He had <span class="repeated-asah"><b><span class="h6213" data-id="425">made</span></b></span>,</span></div>
+                        <div class="hebrew-line show-good show-asah"><span class="h7200" data-id="420">וַיַּ֤רְא</span> <span class="h430" data-id="421">אֱלֹהִים֙</span> <span class="h853" data-id="422">אֶת</span> <span class="h3605" data-id="423">כָּל</span> <span class="h834" data-id="424">אֲשֶׁ֣ר</span> <span class="h6213" data-id="425">עָשָׂ֔ה</span></div>
 
-                        <div class="english-line line-indent-4 show-good"><span class="repeated-good">and <span class="h2009" data-id="426">behold</span>, it was <span class="h3966" data-id="428">very</span> <span class="h2896" data-id="427">good</span>.</span> <span class="phrase good">7/7</span></div>
-                        <div class="hebrew-line show-good"><span class="h2009" data-id="426">וְהִנֵּה</span> <span class="h2896" data-id="427">ט֖וֹב</span> <span class="h3966" data-id="428">מְאֹ֑ד</span></div>
+                        <div class="english-line line-indent-4 show-good show-asah"><span class="repeated-good">and <span class="h2009" data-id="426">behold</span>, it was <span class="h3966" data-id="428">very</span> <span class="h2896" data-id="427">good</span>.</span> <span class="phrase good">7/7</span></div>
+                        <div class="hebrew-line show-good show-asah"><span class="h2009" data-id="426">וְהִנֵּה</span> <span class="h2896" data-id="427">ט֖וֹב</span> <span class="h3966" data-id="428">מְאֹ֑ד</span></div>
 
                         <div class="english-line">&nbsp;</div>
                         <div class="hebrew-line">&nbsp;</div>
@@ -580,23 +592,23 @@
               </div>
 
               <!-- Day 7 -->
-              <div id="day7" class="card">
+              <div id="day7" class="card show-bara show-asah">
                   <h2 class="card-title">Day 7: Completion & Rest</h2>
                   <div class="interlinear-grid">
                       <div class="english-line"><span class="verse">1</span>And <span class="h3615" data-id="435">they were completed</span>, the <span class="h8064" data-id="436">skies</span> and the <span class="h776" data-id="437">land</span> and <span class="h3605" data-id="438">all their</span> <span class="h6635" data-id="439">hosts</span>,</div>
                       <div class="hebrew-line"><span class="h3615" data-id="435">וַיְכֻלּ֛וּ</span> <span class="h8064" data-id="436">הַשָּׁמַ֥יִם</span> <span class="h776" data-id="437">וְהָאָ֖רֶץ</span> <span class="h3605" data-id="438">וְכָל</span> <span class="h6635" data-id="439">צְבָאָֽם</span></div>
 
-                      <div class="english-line"><span class="verse">2</span>And <span class="h430" data-id="441">Elohim</span> <b><span class="h3615" data-id="440">completed</span></b> on the <span class="h7637" data-id="443">seventh</span> <span class="h3117" data-id="442">day</span> his <span class="h4399" data-id="444">work</span> <span class="h834" data-id="445">which</span> he had <span class="h6213" data-id="446">made</span></div>
-                      <div class="hebrew-line"><span class="h3615" data-id="440">וַיְכַ֤ל</span> <span class="h430" data-id="441">אֱלֹהִ֙ים</span> <span class="h3117" data-id="442">בַּיּ֣וֹם</span> <span class="h7637" data-id="443">הַשְּׁבִיעִ֔י</span> <span class="h4399" data-id="444">מְלַאכְתּ֖וֹ</span> <span class="h834" data-id="445">אֲשֶׁ֣ר</span> <span class="h6213" data-id="446">עָשָֽׂה</span></div>
+                      <div class="english-line show-asah"><span class="verse">2</span>And <span class="h430" data-id="441">Elohim</span> <b><span class="h3615" data-id="440">completed</span></b> on the <span class="h7637" data-id="443">seventh</span> <span class="h3117" data-id="442">day</span> his <span class="h4399" data-id="444">work</span> <span class="h834" data-id="445">which</span> he had <span class="repeated-asah"><b><span class="h6213" data-id="446">made</span></b></span></div>
+                      <div class="hebrew-line show-asah"><span class="h3615" data-id="440">וַיְכַ֤ל</span> <span class="h430" data-id="441">אֱלֹהִ֙ים</span> <span class="h3117" data-id="442">בַּיּ֣וֹם</span> <span class="h7637" data-id="443">הַשְּׁבִיעִ֔י</span> <span class="h4399" data-id="444">מְלַאכְתּ֖וֹ</span> <span class="h834" data-id="445">אֲשֶׁ֣ר</span> <span class="h6213" data-id="446">עָשָֽׂה</span></div>
                       
-                      <div class="english-line line-indent-8">and he <b><span class="h7673" data-id="447">rested</span></b> on the <span class="h7637" data-id="449">seventh</span> <span class="h3117" data-id="448">day</span> from <span class="h3605" data-id="450">all his</span> <span class="h4399" data-id="451">work</span> <span class="h834" data-id="452">which</span> he had <span class="h6213" data-id="453">made</span></div>
-                      <div class="hebrew-line"><span class="h7673" data-id="447">וַיִּשְׁבֹּת֙</span> <span class="h3117" data-id="448">בַּיּ֣וֹם</span> <span class="h7637" data-id="449">הַשְּׁבִיעִ֔י</span> <span class="h3605" data-id="450">מִכָּל</span> <span class="h4399" data-id="451">מְלַאכְתּ֖וֹ</span> <span class="h834" data-id="452">אֲשֶׁ֥ר</span> <span class="h6213" data-id="453">עָשָֽׂה</span></div>
+                      <div class="english-line line-indent-8 show-asah">and he <b><span class="h7673" data-id="447">rested</span></b> on the <span class="h7637" data-id="449">seventh</span> <span class="h3117" data-id="448">day</span> from <span class="h3605" data-id="450">all his</span> <span class="h4399" data-id="451">work</span> <span class="h834" data-id="452">which</span> he had <span class="repeated-asah"><b><span class="h6213" data-id="453">made</span></b></span></div>
+                      <div class="hebrew-line show-asah"><span class="h7673" data-id="447">וַיִּשְׁבֹּת֙</span> <span class="h3117" data-id="448">בַּיּ֣וֹם</span> <span class="h7637" data-id="449">הַשְּׁבִיעִ֔י</span> <span class="h3605" data-id="450">מִכָּל</span> <span class="h4399" data-id="451">מְלַאכְתּ֖וֹ</span> <span class="h834" data-id="452">אֲשֶׁ֥ר</span> <span class="h6213" data-id="453">עָשָֽׂה</span></div>
 
-                      <div class="english-line line-indent-4"><span class="verse">3</span>And <span class="h430" data-id="455">Elohim</span> <b><span class="h1288" data-id="454">blessed</span></b> the <span class="h7637" data-id="458">seventh</span> <span class="h3117" data-id="457">day</span> and he <span class="h6942" data-id="459">set it apart as holy</span>,</div>
-                      <div class="hebrew-line"><span class="h1288" data-id="454">וַיְבָ֤רֶךְ</span> <span class="h430" data-id="455">אֱלֹהִ֖ים</span> <span class="h853" data-id="456">אֶת</span> <span class="h3117" data-id="457">יּ֣וֹם</span> <span class="h7637" data-id="458">הַשְּׁבִיעִ֔י</span> <span class="h6942" data-id="459">וַיְקַדֵּ֖שׁ</span> <span class="h853" data-id="460">אֹת֑וֹ</span></div>
+                      <div class="english-line show-bara show-asah line-indent-4"><span class="verse">3</span>And <span class="h430" data-id="455">Elohim</span> <span class="repeated-bara"><b><span class="h1288" data-id="454">blessed</span></b></span> the <span class="h7637" data-id="458">seventh</span> <span class="h3117" data-id="457">day</span> and he <span class="h6942" data-id="459">set it apart as holy</span>,</div>
+                      <div class="hebrew-line show-bara show-asah"><span class="h1288" data-id="454">וַיְבָ֤רֶךְ</span> <span class="h430" data-id="455">אֱלֹהִ֖ים</span> <span class="h853" data-id="456">אֶת</span> <span class="h3117" data-id="457">יּ֣וֹם</span> <span class="h7637" data-id="458">הַשְּׁבִיעִ֔י</span> <span class="h6942" data-id="459">וַיְקַדֵּ֖שׁ</span> <span class="h853" data-id="460">אֹת֑וֹ</span></div>
                       
-                      <div class="english-line line-indent-8"><span class="h3588" data-id="461">because</span> <span class="h3588" data-id="462">on it</span> he <span class="h7673" data-id="463">rested</span> from <span class="h3605" data-id="464">all his</span> <span class="h4399" data-id="465">work</span> <span class="h834" data-id="466">which</span> <span class="h430" data-id="468">Elohim</span> <span class="h1254" data-id="467">created</span> to <span class="h6213" data-id="469">make</span>.</div>
-                      <div class="hebrew-line"><span class="h3588" data-id="461">כִּ֣י</span> <span class="h0" data-id="462">ב֤וֹ</span> <span class="h7673" data-id="463">שָׁבַת֙</span> <span class="h3605" data-id="464">מִכָּל</span> <span class="h4399" data-id="465">מְלַאכְתּ֖וֹ</span> <span class="h834" data-id="466">אֲשֶׁר</span> <span class="h1254" data-id="467">בָּרָ֥א</span> <span class="h430" data-id="468">אֱלֹהִ֖ים</span> <span class="h6213" data-id="469">לַֽעֲשׂוֹת</span></div>
+                      <div class="english-line show-bara line-indent-8 show-asah"><span class="h3588" data-id="461">because</span> <span class="h3588" data-id="462">on it</span> he <span class="h7673" data-id="463">rested</span> from <span class="h3605" data-id="464">all his</span> <span class="h4399" data-id="465">work</span> <span class="h834" data-id="466">which</span> <span class="h430" data-id="468">Elohim</span> <span class="repeated-bara"><b><span class="h1254" data-id="467">created</span></b></span> to <span class="repeated-asah"><b><span class="h6213" data-id="469">make</span></b></span>.</div>
+                      <div class="hebrew-line show-bara show-asah"><span class="h3588" data-id="461">כִּ֣י</span> <span class="h0" data-id="462">ב֤וֹ</span> <span class="h7673" data-id="463">שָׁבַת֙</span> <span class="h3605" data-id="464">מִכָּל</span> <span class="h4399" data-id="465">מְלַאכְתּ֖וֹ</span> <span class="h834" data-id="466">אֲשֶׁר</span> <span class="h1254" data-id="467">בָּרָ֥א</span> <span class="h430" data-id="468">אֱלֹהִ֖ים</span> <span class="h6213" data-id="469">לַֽעֲשׂוֹת</span></div>
                   </div>
               </div>
               <div id="transliteration-tooltip" class="transliteration-tooltip"></div>
