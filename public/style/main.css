@@ -80,7 +80,7 @@ body {
 
 #main-content .repeated-according-to,
 .left-side-drawer .repeated-according-to {
-    background-color: rgba(152, 98, 142, 0.15);
+    background-color: rgba(227, 148, 98, 0.35);
 }
 
 #main-content .repeated-light-lights,
@@ -98,9 +98,9 @@ body {
     background-color: rgba(255, 97, 135 , 0.25);
 }
 
-#main-content .repeated-separate-called,
+#main-content .repeated-separated-called,
 .left-side-drawer .repeated-separated-called {
-    background-color: rgba(56, 46, 56, 0.315);
+    background-color: rgba(56, 46, 56, 0.15);
 }
 
 .highlight {
